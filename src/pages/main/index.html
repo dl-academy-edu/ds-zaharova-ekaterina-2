@@ -1,44 +1,221 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Главная</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на главной странице
-        </h2>
-        <div class="parallax-card">
-          <div class="parallax-card__wrapper-img">
-            <img
-              class="parallax-card__img"
-              src="static/images/cactus.jpg"
-              alt="Картинка кактуса"
-            />
-          </div>
+<html lang="en">
 
-          <div class="parallax-card__description">
-            <p class="parallax-card__paragraph">Кактус маминой подруги</p>
-            <p class="parallax-card__paragraph">
-              Не нужно поливать и никогда не сохнет
-            </p>
-          </div>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    @@include('header/index.html')
+    <main class="main">
+        <h1 class="visually-hidden heading">Dlk</h1>
+        <section class="hero-main container">
+            <div class="hero-wrapper">
+                <div class="wrapper-container">
+                    <div class="items-wrapper">
+                        <span class="sidebar-number">01</span>
+                        <ul class="sidebar-items">
+                            <li class="sidebar-item">
+                                <button type="button" class="sidebar-button sidebar-one"
+                                    aria-label=" change slide"></button>
+                            </li>
+                            <li class="sidebar-item">
+                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            </li>
+                            <li class="sidebar-item">
+                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            </li>
+                            <li class="sidebar-item">
+                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-text-wrapper">
+                        <h2 class="hero-title">The ooh noo collection
+                        </h2>
+                        <p class="hero-text">Designed in Slovenia</p>
+                        @@include('button/index.html', {
+                        'text': 'Explore now',
+                        'class': 'hero-button button-style',
+                        'type' : 'button'
+                        })
+                    </div>
+                    <img src="/static/images/hero/hero-image.png" alt="Monster" class="hero-img" height="635"
+                        width="460">
+                </div>
+                <p class="hero-footer">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            </div>
+        </section>
+        <section class="category container">
+            @@include('sub-heading/index.html', {
+            'class' : 'category-title',
+            'text' : 'Category products'
+            })
+            <ul class="category-items catalog-txt-style">
+                @@include('catalog-card/index.html', {
+                'classLi' : 'category-item',
+                'href' : '#',
+                'class' : 'category-item-link',
+                'classTitle' : 'category-item-title',
+                'text' : 'Apparel kids',
+                'img' : 'static/images/category/apparel.png',
+                'classImg' : 'category-item-img apparel-bckgrnd'
+                })
+                @@include('catalog-card/index.html', {
+                'classLi' : 'category-item',
+                'href' : '#',
+                'class' : 'category-item-link',
+                'classTitle' : 'category-item-title',
+                'text' : 'Holiday shop',
+                'img' : 'static/images/category/holiday.png',
+                'classImg' : 'category-item-img holiday-bckgrnd'
+                })
+                @@include('catalog-card/index.html', {
+                'classLi' : 'category-item',
+                'href' : 'pages/toys/index.html',
+                'class' : 'category-item-link',
+                'classTitle' : 'category-item-title',
+                'text' : 'Toys',
+                'img' : 'static/images/category/toys.png',
+                'classImg' : 'category-item-img toys-bckgrnd'
+                })
+                @@include('catalog-card/index.html', {
+                'classLi' : 'category-item',
+                'href' : '#',
+                'class' : 'category-item-link',
+                'classTitle' : 'category-item-title',
+                'text' : 'Accessories',
+                'img' : 'static/images/category/accessories.png',
+                'classImg' : 'category-item-img accessories-bckgrnd'
+                })
+            </ul>
+            <div class="category-control">
+                <div class="category-button-wrapper">
+                    @@include('arrow-button/index.html', {
+                        'class' : 'category-cntrl-btn-left',
+                        'aria-label' : 'scroll category left',
+                        'width' : '18',
+                        'height' : '30',
+                        'fill' : 'none',
+                        'path' : 'M16 2L3 15L16 28',
+                        'stroke' : '#1E0606'
+                    })
+                    @@include('arrow-button/index.html', {
+                        'class' : 'category-cntrl-btn-right',
+                        'aria-label' : 'scroll category right',
+                        'width' : '18',
+                        'height' : '30',
+                        'fill' : 'none',
+                        'path' : 'M2 2L15 15L2 28',
+                        'stroke' : '#1E0606'
+                    })
+                </div>
+                <p class="category-cntrl-txt txt">Modern finds for the modern home. Curated goods by unique
+                    designers<br>
+                    around the world from fashion to furniture for kids and adults.</p>
+            </div>
+        </section>
+        <section class="delivery container">
+            <div class="delivery-img-wrapper">
+            </div>
+            <div class="delivery-wrapper">
+                @@include('sub-heading/index.html', {
+                'class' : 'delivery-title',
+                'text' : 'Delivery'
+                })
+                <ul class="delivery-items">
+                    <li class="delivery-item">
+                        <button type="button" class="delivery-item-btn" autofocus>Delivery</button>
+                    </li>
+                    <li class="delivery-item">
+                        <button type="button" class="delivery-item-btn">Guarantee</button>
+
+                    </li>
+                    <li class="delivery-item">
+                        <button type="button" class="delivery-item-btn">Credit</button>
+                    </li>
+                </ul>
+                <p class="delivery-txt-first txt">Some days i feel like i've been working on dlk my entire life and
+                    there are
+                    other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="delivery-txt txt">What started as an outlet to deal with the traumatic loss of my husband, dlk
+                    has now become a truly happy place for me and i have you and all of the beautiful designers that we
+                    work
+                    with to thank!</p>
+                @@include('link-button/index.html', {
+                'text': 'Learn more',
+                'class': 'delivery-button button-style',
+                })
+            </div>
+        </section>
+        <section class="partners container">
+            @@include('sub-heading/index.html', {
+            'class' : 'delivery-title visually-hidden',
+            'text' : 'Partners'
+            })
+            <ul class="partners-list">
+                <li class="partner-item">
+                    <a href="#" class="partner-item-link" aria-label="Go to Mail.ru">
+                        <img src="static/images/partners/mail.png" alt="Partner" class="partner-item-img">
+                    </a>
+                </li>
+                <li class="partner-item">
+                    <a href="#" class="partner-item-link" aria-label="Go to Apple">
+                        <img src="static/images/partners/apple.png" alt="Partner" class="partner-item-img">
+                    </a>
+                </li>
+                <li class="partner-item">
+                    <a href="#" class="partner-item-link" aria-label="Go to Eltex">
+                        <img src="static/images/partners/eltex.png" alt="Partner" class="partner-item-img">
+                    </a>
+                </li>
+                <li class="partner-item">
+                    <a href="#" class="partner-item-link" aria-label="Go to Owox">
+                        <img src="static/images/partners/owox.png" alt="Partner" class="partner-item-img">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="aside container">
+            <div class="buy">
+                @@include('sub-heading/index.html', {
+                'class' : 'buy-title',
+                'text' : 'Design Life Kids'
+                })
+                <h3 class="buy-subtitle">About Us</h3>
+                <p class="buy-txt txt">Some days i feel like i've been working on dlk my entire life and there are
+                    other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                @@include('link-button/index.html', {
+                'text': 'BUY NOW',
+                'class': 'buy-button button-style',
+                })
+            </div>
+            <div class="contacts">
+                @@include('sub-heading/index.html', {
+                'class' : 'contacts-title',
+                'text' : 'Contacts'
+                })
+                <p class="contacts-txt txt">Some days i feel like i've been working on dlk my entire life and there
+                    are
+                    other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <img src="static/images/aside/contacts-img.png" alt="Map" class="contacts-img" height="196" width="483">
+            </div>
+        </section>
     </main>
     @@include('footer/index.html')
+    @@include('popup/index.html')
+    <div class="popup-overlay"></div>
     <script src="scripts.js"></script>
-  </body>
+</body>
+
 </html>

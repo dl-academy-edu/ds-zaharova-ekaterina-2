@@ -1,3 +1,86 @@
-main.catalog-main {
- padding: 30px 0;
+.main-catalog {
+    margin-top: 58px;
+    margin-bottom: 55px;
 }
+
+/* Breadcrumbs and title */
+
+.catalog-breadcrumbs-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.category-title {
+     margin-bottom: 15px;
+}
+.catalog-breadcrumbs-list {
+    display: flex;
+    flex-direction: row;
+    font-family: Crimson Text, Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+.catalog-breadcrumb-item a{
+    color: #1E0606;
+}
+.catalog-breadcrumb-item {
+    margin-right: 20px;
+}
+.catalog-breadcrumb-item:last-child{
+    opacity: 0.5;
+    margin-right: 0px;
+}
+
+/* Section Catalog */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.catalog-items {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 23px;
+}
+.catalog-item:nth-child(4) {
+    padding-left: 200px;
+}
+
+.catalog-item {
+    margin-right: 20px;
+}
+.catalog-item:last-child{
+    margin-right: 0px;
+}
+.catalog-item-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.catalog-item-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 129px;
+}
+
+/* Section description */
+
+.description-wrapper {
+    width: 680px;
+    box-sizing: content-box;
+    padding-left: 200px;
+}
+.description-title {
+    margin-bottom: 25px;
+}
+.description-txt {
+    margin-bottom: 15px;
+}
+.description-txt:last-child {
+    margin-bottom: 0px;
+} 

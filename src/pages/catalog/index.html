@@ -1,28 +1,231 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="shortcut icon" href="/src/static/images/favicon.ico" />
+</head>
+
+<body>
+    <header class="header container">
+        <div class="logo-menu-wrapper">
+            <a href="index.html" class="header-logo" aria-label="Go to main">
+                <img src="/image/header/header-logo.svg" alt="Logo" class="header-logo-img">
+            </a>
+            <nav class="menu-nav">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="blog.html" class="menu-item-link">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="catalog.html" class="menu-item-link">Catalog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-contact-wrapper">
+            <button type="button" class="search-btn" aria-label="search on DLK"></button>
+            <a href="/contact.html" class="contact-button">Contact us</a>
+        </div>
+    </header>
+    <main class="main-catalog">
+        <div class="catalog-breadcrumbs-wrapper container">
+            <h1 class="category-title heading">Category products</h1>
+            <ul class="catalog-breadcrumbs-list">
+                <li class="catalog-breadcrumb-item">
+                    <a href="index.html" aria-label="go to main">Home</a>
+                </li>
+                <li class="catalog-breadcrumb-item">
+                    <!-- Эту стрелочку нужно сделать в CSS -->
+                    <img src="/image/category/arrow.svg" alt="Arrow">
+                </li>
+                <li class="catalog-breadcrumb-item">
+                    Catalog
+                </li>
+            </ul>
+        </div>
+        <section class="catalog container">
+            <h2 class="visually-hidden sub-heading">Catalog</h2>
+            <ul class="catalog-items catalog-txt-style">
+                <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Apparel kids
+                        </h3>
+                        <img src="/image/category/apparel.png" alt="image" class="catalog-item-img apparel-bckgrnd"
+                            height="270" width="280">
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Holiday shop
+                        </h3>
+                        <img src="/image/category/holiday.png" alt="image" class="catalog-item-img holiday-bckgrnd"
+                            height="270" width="280">
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="/toys.html" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Toys</h3>
+                        <img src="/image/category/toys.png" alt="image" class="catalog-item-img toys-bckgrnd"
+                            height="270" width="280">
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Accessories</h3>
+                        <img src="/image/category/accessories.png" alt="image"
+                            class="catalog-item-img accessories-bckgrnd" height="270" width="280">
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Sale</h3>
+                        <img src="/image/category/sale.png" alt="image" class="catalog-item-img sale-bckgrnd"
+                            height="270" width="280">
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">
+                        <h3 class="catalog-item-title">Apparel adults
+                        </h3>
+                        <img src="/image/category/adults.png" alt="image" class="catalog-item-img adults-bckgrnd"
+                            height="270" width="280">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="description container">
+            <div class="description-wrapper">
+                <h2 class="description-title sub-heading">Product Description</h2>
+                <p class="description-txt txt">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle
+                    and
+                    almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="description-txt txt">A toy with a height of 43 cm bends its knees, the head rotates, it can
+                    stand
+                    upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
+                </p>
+                <p class="description-txt txt">The set includes a miniature set of fashionable clothes, a hairbrush, a
+                    bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for
+                    the
+                    doll, the other for her young mistress.</p>
+            </div>
+        </section>
     </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+    <footer class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer-title-wrapper">
+                <h2 class="navigation-title footer-title">Navigation</h2>
+                <h2 class="customer-info-title footer-title">Customer Information</h2>
+                <h2 class="connect-title footer-title">Connect</h2>
+            </div>
+            <div class="footer-menu-wrapper">
+                <div class="navigation-wrapper">
+                    <ul class="navigation-items">
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-item-link">About Us</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="blog.html" class="navigation-item-link">Blog</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-item-link">Design Services</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-item-link">Featured On</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-item-link">2018 Holiday Catalog</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-item-link">Shop By Designer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customer-wrapper">
+                    <ul class="customer-info-list">
+                        <li class="customer-info-item">
+                            <a href="contact.html" class="customer-info-item-link">Contact Us</a>
+                        </li>
+                        <li class="customer-info-item">
+                            <a href="#" class="customer-info-item-link">Sale Exclusions</a>
+                        </li>
+                        <li class="customer-info-item">
+                            <a href="#" class="customer-info-item-link">Shipping & Returns</a>
+                        </li>
+                        <li class="customer-info-item">
+                            <a href="#" class="customer-info-item-link">Terms & Conditions</a>
+                        </li>
+                        <li class="customer-info-item">
+                            <a href="#" class="customer-info-item-link">Privacy Policy</a>
+                        </li>
+                        <li class="customer-info-item">
+                            <a href="#" class="customer-info-item-link">Search</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect-wrapper">
+                    <div class="input-wrapper">
+                        <input id="connect-email-input" type="email" placeholder="Email" class="connect-input-email">
+                        <label for="connect-email-input" class="visually-hidden">Email</label>
+                        <button type="button" class="connect-button button-style">Join</button>
+                    </div>
+                    <ul class="social-items">
+                        <li class="social-item other-color">
+                            <a href="#" class="social-item-facebook" aria-label="Follow Us on Facebook">
+                                <img src="/image/footer/Facebook.svg" alt="facebook" class="facebook-img" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                        <li class="social-item other-color">
+                            <a href="#" class="social-item-twitter" aria-label="Follow Us on Twitter">
+                                <img src="/image/footer/Twitter.svg" alt="twitter" class="twitter-img" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                        <li class="social-item other-color">
+                            <a href="#" class="social-item-pinterest" aria-label="Follow Us on Pinterest">
+                                <img src="/image/footer/Pinterest.svg" alt="pinterest" class="pinterest-img" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                        <li class="social-item other-color">
+                            <a href="#" class="social-item-instagram" aria-label="Follow Us on Instagram">
+                                <img src="/image/footer/Instagram.svg" alt="instagram" class="instagram-img" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-wrapper">
+                <fieldset class="rating">
+                    <legend class="rating-title footer-items">Company Rating</legend>
+                    <div class="rating-group">
+                        <input type="radio" name="rating" value="1" class="rating-star" aria-label="Very bad">
+                        <input type="radio" name="rating" value="2" class="rating-star" aria-label="Bad">
+                        <input type="radio" name="rating" value="3" class="rating-star" aria-label="Normal">
+                        <input type="radio" name="rating" value="4" class="rating-star" aria-label="Good">
+                        <input type="radio" name="rating" value="5" class="rating-star" aria-label="Fine">
+                    </div>
+                </fieldset>
+                <div class="copyright">
+                    <p class="copyright-txt footer-items">Copyright © 2018 Dlk • Design Life Kids</p>
+                </div>
+                <div class="web-design">
+                    <a href="https://directline.digital/" class="footer-design other-color">Web Design — Direct Line
+                        Development</a>
+                </div>
+            </div>
+    </footer>
+</body>
+
 </html>
