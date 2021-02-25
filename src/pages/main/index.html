@@ -16,7 +16,10 @@
 </head>
 
 <body>
-    @@include('header/index.html')
+    @@include('header/index.html', {
+        'link' : 'index.html',
+        'img' : '/static/images/header/header-logo.svg'
+    })
     <main class="main">
         <h1 class="visually-hidden heading">Dlk</h1>
         <section class="hero-main container">
@@ -213,7 +216,12 @@
         </section>
     </main>
     @@include('footer/index.html')
-    @@include('popup/index.html')
+        <div class="main-wrapper popup">
+            <div class="form-wrapper">
+                @@include('popup/index.html')
+                <button class="close-button" aria-label="Close"></button>
+            </div>
+        </div>        
     <div class="popup-overlay"></div>
     <script src="scripts.js"></script>
 </body>

@@ -34,7 +34,7 @@
 margin-left: 20px;
 }
 .menu-item-link {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -62,10 +62,10 @@ margin-left: 20px;
   border: none;
 }
               /* Button condition */
-.header-logo-img:not(.header-logo-main):hover {
+.header-logo-img:hover {
   opacity: 0.5;
 }
-.header-logo-img:not(.header-logo-main):active {
+.header-logo-img:active {
   opacity: 0.2;
 }
 .menu-item-link:hover {
@@ -81,7 +81,7 @@ margin-left: 20px;
   opacity: 0.2;
 }
 .contact-button {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;

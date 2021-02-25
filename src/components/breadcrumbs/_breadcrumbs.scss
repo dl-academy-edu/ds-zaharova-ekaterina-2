@@ -1,0 +1,10 @@
+.breadcrumb-item {
+    margin-right: 20px;
+}
+.breadcrumb-item:last-child{
+    opacity: 0.5;
+    margin-right: 0px;
+}
+.breadcrumb-item a{
+    color: #1E0606;
+}

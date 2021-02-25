@@ -4,19 +4,10 @@
     margin-bottom: 59px;
 }
 .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 50px;
 }
 .contact-title {
@@ -24,42 +15,18 @@
     word-spacing: 10px;
 }
 .contact-breadcrumbs-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-family: Crimson Text, Arial, sans-serif;
+    flex-direction: row;
+    font-family: 'Crimson Text', 'Arial', sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
 }
-.contact-breadcrumb-item {
-    padding-right: 20px;
-}
-.contact-breadcrumb-item:last-child {
-    margin-bottom: 0px;
-}
-.contact-breadcrumb-item a {
-    color: #1E0606;
-}
-.contact-breadcrumb-item:last-child {
-    opacity: 0.5;
-}
-
-/* Main */
-
+                          /* Main */
 .form-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
 }
 .form-information {
     margin-left: 120px;
@@ -69,7 +36,7 @@
 }
 .contact-txt:last-child {
     margin-bottom: 0px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;

@@ -99,9 +99,7 @@
   textarea {
     resize: none;
   }
-  
   /* Form - Textarea */
-  
   .form-textarea {
     display: flex;
     flex-direction: column;
@@ -141,6 +139,7 @@
     left: 3px;
     width: 15px;
     height: 15px;
+    background-image: url(../../static/images/checkbox/vector1.svg);
     background-repeat: no-repeat;
     opacity: 0;
   }

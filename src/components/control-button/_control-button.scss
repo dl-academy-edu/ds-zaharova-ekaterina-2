@@ -1,0 +1,59 @@
+.control-navigation-list {
+    display: flex;
+    flex-direction: row;
+}
+.control-navigation-item {
+    margin-right: 64px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 64px;
+}
+.control-navigation-item:first-child {
+    margin-right: 67px;
+}
+.control-navigation-item:last-child {
+    margin-right: 0px;
+}
+.control-navigation-item a {
+    color: #1E0606;
+}
+.control-navigation-item a:hover {
+    opacity: 0.5;
+}
+.control-navigation-item .control-navigation-item-first {
+    color: #C29974;
+}
+.control-navigation-item:last-child {
+    margin-right: 0px;
+}
+.control-button-left, .control-button-right {
+    width: 23px;
+    height: 36px;
+    background-color: transparent;
+    border:0;
+}
+.control-button-left {
+    background-image: url(static/images/arrow/arrow-left.svg);
+    background-repeat: no-repeat;
+    opacity: 0.12;
+}
+.control-button-left:hover {
+    opacity: 1;
+}
+.control-button-left:active {
+    opacity: 0.5;
+}
+.control-button-right {
+    background-image: url(static/images/arrow/arrow-rght.svg);
+    background-repeat: no-repeat;
+    opacity: 0.12;
+}
+.control-button-right:hover {
+    opacity: 1;
+}
+.control-button-right:active {
+    opacity: 0.5;
+} 

@@ -2,31 +2,19 @@
     margin-top: 58px;
     margin-bottom: 53px;
 }
-
-/* Breadcrumbs and title */
-
+                /* Breadcrumbs and title */
 .toys-breadcrumbs-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 50px;
 }
 .toys-title {
     margin-bottom: 15px;
 }
 .toys-breadcrumbs-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-family: Crimson Text, Arial, sans-serif;
+    flex-direction: row;
+    font-family: 'Crimson Text', 'Arial', sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
@@ -42,22 +30,13 @@
 .toys-breadcrumb-item a {
     color: #1E0606;
 }
-
-/* Form */
-/* Form General */
-
+              /* Form */
+             /* Form General */
 .toys-form {
     background-color: rgba(125, 151, 218, 0.2);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
     padding-top: 42px;
     padding-bottom: 39px;
     padding-right: 85px;
@@ -66,7 +45,7 @@
     outline: none;
 }
 .toys-form legend {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -76,7 +55,7 @@
     margin-bottom: 15px;
 }
 .toys-form label {
-    font-family: Open Sans;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -86,20 +65,11 @@
 .toys-form{
     margin-bottom: 60px;
 }
-
-/* Filter Cost */
-
+                  /* Filter Cost */
 .form-cost {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-right: 108px;
 }
 .cost-item-main {
@@ -116,15 +86,9 @@
     position: relative;
     height: 24px;
     width: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .cost-item-circle {
     position: absolute;
@@ -138,46 +102,24 @@
     top: 0px;
 }
 .cost-value-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .form-cost-value-max {
     margin-right: -11px;
 }
-/* Filter Color */
-
+            /* Filter Color */
 .form-color {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-right: 126px;
 }
 .form-color-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
     margin-bottom: 16px;
 }
 .form-color-item:last-child{
@@ -205,7 +147,7 @@
     left: 3px;
     height: 16px;
     width: 16px;
-    background-image: url(images/checkbox/Vector\ 1.svg);
+    background-image: url(../../static/images/checkbox/vector1.svg);
     background-repeat: no-repeat;
     opacity: 0;
 }
@@ -222,26 +164,14 @@
 /* Filter Delivery */
 
 .form-delivery {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-right: 69px;
 }
 .form-delivery-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-bottom: 11px;
 }
 .form-delivery-item:last-child {
@@ -280,48 +210,23 @@
 .delivery-radio-input:checked + .delivery-radio-label {
     text-decoration: underline;
 }
-
-/* Filter Amount */
-
+                      /* Filter Amount */
 .form-amount {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-right: 60px;
 }
 .form-amount-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .form-amount-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 80px;
     height: 35px;
@@ -353,49 +258,31 @@
 .amount-checkbox-input:hover + .amount-checkbox-label {
     color: #877379
 }
-/* Form Button */
-
+              /* Form Button */
 .toys-form-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     min-width: 95px;
     min-height: 40px;
     margin-top: 37px;
     cursor: pointer;
 }
-
-/* Section Toys Catalog */
-
+                     /* Section Toys Catalog */
 .toys-catalog {
     margin-bottom: 45px;
 }
-
 .learn-more {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     background-color: #E5EAF8;
     left: 87px;
     top: 89px;
     height: 207px;
     width: 207px;
     opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .learn-more:hover {
@@ -405,16 +292,10 @@
     opacity: 0.6;
 }
 .catalog-img-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: Montserrat, Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -427,7 +308,7 @@
     transition: 0.3s;
 }
 .toys-catalog-item-title {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -436,7 +317,7 @@
     margin-bottom: 15px;
 }
 .toys-catalog-item-price {
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -444,26 +325,14 @@
     color: #1E0606;
 }
 .toys-catalog-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 .toys-catalog-item {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 498px;
     width: 380px;
     margin-right: 20px;
@@ -481,101 +350,17 @@
     margin-bottom: 20px;
 }
 .toys-catalog-item-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 26px;
     padding-bottom: 28px;
 }
-
 /* Сatalog cntl button */
-
 .wrapper-toys-catalog-control {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-.toys-catalog-control-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-}
-.toys-catalog-control-item{
-    margin-right: 64px;
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    
-}
-.toys-catalog-control-item a {
-    color: #1E0606;
-}
-.toys-catalog-control-item a:hover {
-    opacity: 0.5;
-}
-.toys-catalog-control-item .catalog-control-item-first {
-    color: #C29974;
-}
-.toys-catalog-control-item {
-    margin-right: 64px;
-}
-.toys-catalog-control-item:first-child {
-    margin-right: 67px;
-}
-.toys-catalog-control-item:last-child {
-    margin-right: 0px;
-}
-.toys-catalog-cntrl-btn-left, .toys-catalog-cntrl-btn-right {
-    width: 23px;
-    height: 36px;
-    background-color: transparent;
-    border:0;
-}
-.toys-catalog-cntrl-btn-left {
-    background-image: url(images/arrow/arrow-left.svg);
-    background-repeat: no-repeat;
-    opacity: 0.12;
-}
-.toys-catalog-cntrl-btn-left:hover {
-    opacity: 1;
-}
-.toys-catalog-cntrl-btn-left:active {
-    opacity: 0.5;
-}
-.toys-catalog-cntrl-btn-right {
-    background-image: url(/image/arrow/arrow-rght.svg);
-    background-repeat: no-repeat;
-    opacity: 0.12;
-}
-.toys-catalog-cntrl-btn-right:hover {
-    opacity: 1;
-}
-.toys-catalog-cntrl-btn-right:active {
-    opacity: 0.5;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

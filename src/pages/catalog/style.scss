@@ -2,9 +2,7 @@
     margin-top: 58px;
     margin-bottom: 55px;
 }
-
-/* Breadcrumbs and title */
-
+                 /* Breadcrumbs and title */
 .catalog-breadcrumbs-wrapper {
     display: flex;
     flex-direction: column;
@@ -16,25 +14,13 @@
 .catalog-breadcrumbs-list {
     display: flex;
     flex-direction: row;
-    font-family: Crimson Text, Arial, sans-serif;
+    font-family: 'Crimson Text', 'Arial', sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
 }
-.catalog-breadcrumb-item a{
-    color: #1E0606;
-}
-.catalog-breadcrumb-item {
-    margin-right: 20px;
-}
-.catalog-breadcrumb-item:last-child{
-    opacity: 0.5;
-    margin-right: 0px;
-}
-
-/* Section Catalog */
-
+                  /* Section Catalog */
 .catalog {
     display: flex;
     flex-direction: column;
@@ -48,7 +34,6 @@
 .catalog-item:nth-child(4) {
     padding-left: 200px;
 }
-
 .catalog-item {
     margin-right: 20px;
 }
@@ -67,9 +52,7 @@
     justify-content: center;
     width: 129px;
 }
-
-/* Section description */
-
+                   /* Section description */
 .description-wrapper {
     width: 680px;
     box-sizing: content-box;
