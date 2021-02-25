@@ -1,28 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
+</head>
+
+<body>
+    @@include('header/index.html', {
+        'link' : '../../index.html',
+        'img' : '/static/images/header/header-logo.svg'
+    })
+    <main class="main-catalog">
+        <div class="catalog-breadcrumbs-wrapper container">
+            <h1 class="category-title heading">Category products</h1>
+            <ul class="catalog-breadcrumbs-list">
+                @@include('breadcrumbs/index.html', {
+                    'class' : 'breadcrumb-item',
+                    'name-page' : 'Catalog'
+                })
+            </ul>
+        </div>
+        <section class="catalog container">
+            @@include('sub-heading/index.html', {
+                'class' : 'visually-hidden',
+                'text' : 'Catalog'
+                })
+            <ul class="catalog-items catalog-txt-style">
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '#',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Apparel kids',
+                    'img' : '../../static/images/category/apparel.png',
+                    'classImg' : 'catalog-item-img apparel-bckgrnd'
+                })
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '#',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Holiday shop',
+                    'img' : '../../static/images/category/holiday.png',
+                    'classImg' : 'catalog-item-img holiday-bckgrnd'
+                })
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '../toys/index.html',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Toys',
+                    'img' : '../../static/images/category/toys.png',
+                    'classImg' : 'catalog-item-img toys-bckgrnd'
+                })
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '#',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Accessories',
+                    'img' : '../../static/images/category/accessories.png',
+                    'classImg' : 'catalog-item-img accessories-bckgrnd'
+                })
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '#',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Sale',
+                    'img' : '../../static/images/category/sale.png',
+                    'classImg' : 'catalog-item-img sale-bckgrnd'
+                })
+                @@include('catalog-card/index.html',{
+                    'classLi' : 'catalog-item',
+                    'href' : '#',
+                    'class' : 'catalog-item-link',
+                    'classTitle' : 'catalog-item-title',
+                    'text' : 'Apparel adults',
+                    'img' : '../../static/images/category/adults.png',
+                    'classImg' : 'catalog-item-img adults-bckgrnd'
+                })
+            </ul>
+        </section>
+        <section class="description container">
+            <div class="description-wrapper">
+                <h2 class="description-title sub-heading">Product Description</h2>
+                <p class="description-txt txt">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle
+                    and
+                    almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="description-txt txt">A toy with a height of 43 cm bends its knees, the head rotates, it can
+                    stand
+                    upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
+                </p>
+                <p class="description-txt txt">The set includes a miniature set of fashionable clothes, a hairbrush, a
+                    bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for
+                    the
+                    doll, the other for her young mistress.</p>
+            </div>
+        </section>
     </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

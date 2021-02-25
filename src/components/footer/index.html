@@ -1,8 +1,110 @@
-<footer>
-  <div class="container">
-    <span class="title-block title-block_one">Footer</span>
-    <a href="/">Главная</a>
-    <a href="/pages/catalog">Каталог</a>
-    <a href="/pages/toys">Игрушки</a>
-  </div>
+<footer class="footer">
+  <div class="footer-wrapper container">
+      <div class="footer-title-wrapper">
+          <h2 class="navigation-title footer-title">Navigation</h2>
+          <h2 class="customer-info-title footer-title">Customer Information</h2>
+          <h2 class="connect-title footer-title">Connect</h2>
+      </div>
+      <div class="footer-menu-wrapper">
+          <div class="navigation-wrapper">
+              <ul class="navigation-items">
+                  <li class="navigation-item">
+                      <a href="#" class="navigation-item-link">About Us</a>
+                  </li>
+                  <li class="navigation-item">
+                      <a href="../blog/index.html" class="navigation-item-link">Blog</a>
+                  </li>
+                  <li class="navigation-item">
+                      <a href="#" class="navigation-item-link">Design Services</a>
+                  </li>
+                  <li class="navigation-item">
+                      <a href="#" class="navigation-item-link">Featured On</a>
+                  </li>
+                  <li class="navigation-item">
+                      <a href="#" class="navigation-item-link">2018 Holiday Catalog</a>
+                  </li>
+                  <li class="navigation-item">
+                      <a href="#" class="navigation-item-link">Shop By Designer</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="customer-wrapper">
+              <ul class="customer-info-list">
+                  <li class="customer-info-item">
+                      <a href="../contact/index.html" class="customer-info-item-link">Contact Us</a>
+                  </li>
+                  <li class="customer-info-item">
+                      <a href="#" class="customer-info-item-link">Sale Exclusions</a>
+                  </li>
+                  <li class="customer-info-item">
+                      <a href="#" class="customer-info-item-link">Shipping & Returns</a>
+                  </li>
+                  <li class="customer-info-item">
+                      <a href="#" class="customer-info-item-link">Terms & Conditions</a>
+                  </li>
+                  <li class="customer-info-item">
+                      <a href="#" class="customer-info-item-link">Privacy Policy</a>
+                  </li>
+                  <li class="customer-info-item">
+                      <a href="#" class="customer-info-item-link">Search</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="connect-wrapper">
+              <div class="input-wrapper">
+                  <input id="connect-email-input" type="email" placeholder="Email" class="connect-input-email">
+                  <label for="connect-email-input" class="visually-hidden">Email</label>
+                  @@include('button/index.html', {
+                    'text': 'Join',
+                    'class': 'connect-button button-style',
+                    'type' : 'button'
+                    })
+              </div>
+              <ul class="social-items">
+                  <li class="social-item other-color">
+                      <a href="#" class="social-item-facebook" aria-label="Follow Us on Facebook">
+                          <img src="../../static/images/footer/Facebook.svg" alt="facebook" class="facebook-img" width="30"
+                              height="30">
+                      </a>
+                  </li>
+                  <li class="social-item other-color">
+                      <a href="#" class="social-item-twitter" aria-label="Follow Us on Twitter">
+                          <img src="../../static/images/footer/Twitter.svg" alt="twitter" class="twitter-img" width="30"
+                              height="30">
+                      </a>
+                  </li>
+                  <li class="social-item other-color">
+                      <a href="#" class="social-item-pinterest" aria-label="Follow Us on Pinterest">
+                          <img src="../../static/images/footer/Pinterest.svg" alt="pinterest" class="pinterest-img" width="30"
+                              height="30">
+                      </a>
+                  </li>
+                  <li class="social-item other-color">
+                      <a href="#" class="social-item-instagram" aria-label="Follow Us on Instagram">
+                          <img src="../../static/images/footer/Instagram.svg" alt="instagram" class="instagram-img" width="30"
+                              height="30">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom-wrapper">
+          <fieldset class="rating">
+              <legend class="rating-title footer-items">Company Rating</legend>
+              <div class="rating-group">
+                  <input type="radio" name="rating" value="1" class="rating-star" aria-label="Very bad">
+                  <input type="radio" name="rating" value="2" class="rating-star" aria-label="Bad">
+                  <input type="radio" name="rating" value="3" class="rating-star" aria-label="Normal">
+                  <input type="radio" name="rating" value="4" class="rating-star" aria-label="Good">
+                  <input type="radio" name="rating" value="5" class="rating-star" aria-label="Fine">
+              </div>
+          </fieldset>
+          <div class="copyright">
+              <p class="copyright-txt footer-items">Copyright © 2018 Dlk • Design Life Kids</p>
+          </div>
+          <div class="web-design">
+              <a href="https://directline.digital/" class="footer-design other-color">Web Design — Direct Line
+                  Development</a>
+          </div>
+      </div>
 </footer>

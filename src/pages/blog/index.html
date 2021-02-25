@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    @@include('header/index.html', {
+        'link' : '../../index.html',
+        'img' : '/static/images/header/header-logo.svg'
+    })
+    <main class="main-blog">
+        <div class="blog-breadcrumbs-wrapper container">
+            <h1 class="blog-title heading">Blog</h1>
+            <ul class="blog-breadcrumbs-list">
+                @@include('breadcrumbs/index.html', {
+                    'class' : 'breadcrumb-item',
+                    'name-page' : 'Blog'
+                })
+            </ul>
+        </div>
+        <section class="main-blog-items container">
+            <h2 class="visually-hidden sub-heading">Blog</h2>
+            <div class="blog-items-wrapper">
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog1.png" alt="constructor" class="blog-item-img" width="380"
+                            height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Top 5 fastest growing it service companies in philly</h3>
+                        <p class="blog-item-txt txt">Direct Line Development’s Team is excited to announce that we
+                            received
+                            UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the
+                            Top 1%
+                            of service providers in the given marketplace.</p>
+                    </a>
+                </article>
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog2.png" alt="image" class="blog-item-img" width="380" height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Best financial</h3>
+                        <p class="blog-item-txt txt">Direct Line Development is honored to be recognized as one of the
+                            Top
+                            100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+                    </a>
+                </article>
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog3.png" alt="image" class="blog-item-img" width="380" height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Company logo or brand identity: which one is more important? brand
+                            identity
+                        </h3>
+                        <p class="blog-item-txt txt">To survive in the world of digital marketing, you need to keep up
+                            with
+                            the latest SEO trends. Here are our simple, but effective, SEO tips for small business
+                            success.
+                        </p>
+                    </a>
+                </article>
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog4.png" alt="image" class="blog-item-img" width="380" height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Best financial</h3>
+                        <p class="blog-item-txt txt">Direct Line Development is honored to be recognized as one of the
+                            Top
+                            100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+                    </a>
+                </article>
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog5.png" alt="image" class="blog-item-img" width="380" height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Company logo or brand identity: which one is more important? brand
+                            identity</h3>
+                        <p class="blog-item-txt txt">To survive in the world of digital marketing, you need to keep up
+                            with
+                            the latest SEO trends. Here are our simple, but effective, SEO tips for small business
+                            success.
+                        </p>
+                    </a>
+                </article>
+                <article class="blog-item">
+                    <a href="#" aria-label="Go to read" class="blog-flex">
+                        <img src="../../static/images/blog/blog6.png" alt="image" class="blog-item-img" width="380" height="220">
+                        <time class="blog-item-time" datetime="2018-08-23">23rd August 2018</time>
+                        <h3 class="blog-item-title">Top 5 fastest growing it service companies in philly</h3>
+                        <p class="blog-item-txt txt">Direct Line Development’s Team is excited to announce that we
+                            received
+                            UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the
+                            Top 1%
+                            of service providers in the given marketplace.</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <div class="wrapper-blog-control container">
+            @@include('control-button/index.html')
+        </div>
+    </main>
+    @@include('footer/index.html')
+</body>
+
+</html>
