@@ -6,50 +6,46 @@
   width: 1180px;
   box-sizing: content-box;
   padding-top: 50px;
+  &__menu-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+  &__logo {
+    width: 100px;
+    height: 52px;
+  }
+  &__nav {
+    display: flex;
+    margin-left: 60px;
+    padding-top: 16px;
+  &_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    flex-wrap: wrap;
+    row-gap: 9px;
+  }
+  &_item + &_item {
+      margin-left: 20px;
+  }
+  &_item-link {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+  }
 }
-                      /* Logo */
-.logo-menu-wrapper{
-  display: flex;
-  flex-direction: row;
-}
-.header-logo-img {
-  width: 100px;
-  height: 52px;
-}
-                 /* Navigation */
-.menu-nav {
-  display: flex;
-  margin-left: 60px;
-  padding-top: 16px;
-}
-.menu-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 0;
-  flex-wrap: wrap;
-  row-gap: 9px;
-}
-.menu-item + .menu-item {
-margin-left: 20px;
-}
-.menu-item-link {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19px;
-  color: #1E0606;
-  text-transform: uppercase;
-}
-            /* Search, contact us */
-.search-contact-wrapper{    
+&__search-wrapper{    
   display: flex;
   flex-direction: row;
   justify-content: center;
   min-width: 136px;
 }
-.search-btn {
+&__search-btn {
   display: flex;
   align-items: center;
   margin-right: 26px;
@@ -61,26 +57,7 @@ margin-left: 20px;
   background-color: transparent;
   border: none;
 }
-              /* Button condition */
-.header-logo-img:hover {
-  opacity: 0.5;
-}
-.header-logo-img:active {
-  opacity: 0.2;
-}
-.menu-item-link:hover {
-  opacity: 0.5;
-}
-.menu-item-link:active {
-  opacity: 0.2;
-}
-.search-btn:hover {
-  opacity: 0.5;
-}
-.search-btn:active {
-  opacity: 0.2;
-}
-.contact-button {
+&__contact-button {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -90,9 +67,13 @@ margin-left: 20px;
   text-transform: uppercase;
   word-spacing: 4px;
 }
-.contact-button:hover {
+}
+                 /* Condition */
+button:hover,
+a:hover {
   opacity: 0.5;
 }
-.contact-button:active {
+button:active,
+a:active {
   opacity: 0.2;
 }
