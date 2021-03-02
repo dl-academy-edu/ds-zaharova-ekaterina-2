@@ -2,71 +2,56 @@
     margin-top: 58px;
     margin-bottom: 55px;
 }
-                 /* Breadcrumbs and title */
-.catalog-breadcrumbs-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-.catalog-breadcrumbs-list {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-}
-                  /* Section Catalog */
 .catalog {
     display: flex;
     flex-direction: column;
     margin-bottom: 55px;
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 23px;
+    }
+    &__item {
+        margin-right: 20px;
+        &:nth-child(4) {
+            padding-left: 200px;
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    &__title {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 129px;
+        &:hover {
+            text-decoration-line: underline;
+        }
+        &:active {
+            text-decoration-line: underline;
+        }
+    }
 }
-.catalog-items {
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 23px;
+.description {
+    &__wrapper {
+        width: 680px;
+        box-sizing: content-box;
+        padding-left: 200px;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__txt {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0px;
+        } 
+    }
 }
-.catalog-item:nth-child(4) {
-    padding-left: 200px;
-}
-.catalog-item {
-    margin-right: 20px;
-}
-.catalog-item:last-child{
-    margin-right: 0px;
-}
-.catalog-item-link {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.catalog-item-title {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 129px;
-}
-.catalog-item-title:hover {
-    text-decoration-line: underline;
-}
-.catalog-item-title:active {
-    text-decoration-line: underline;
-}
-                   /* Section description */
-.description-wrapper {
-    width: 680px;
-    box-sizing: content-box;
-    padding-left: 200px;
-}
-.description-title {
-    margin-bottom: 25px;
-}
-.description-txt {
-    margin-bottom: 15px;
-}
-.description-txt:last-child {
-    margin-bottom: 0px;
-} 

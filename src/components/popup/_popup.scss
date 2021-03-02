@@ -180,5 +180,8 @@ textarea {
     align-items    : center;
     min-width      : 106px;
     min-height     : 40px;
+    &:disabled {
+      background-color: #EEE4DB;
+    }
   }
 }

@@ -41,166 +41,164 @@
         </div>
         <form action="https://echo.htmlacademy.ru" method="POST" id="toys-form" class="toys-form container"
             aria-label="change the filter value" tabindex="0">
-            <fieldset class="form-cost" form="toys-form" name="filter-cost">
-                <legend class="form-cost-title">Cost</legend>
-                <div class="cost-item-main">
+            <fieldset class="toys-form__cost" form="toys-form" name="filter-cost">
+                <legend class="toys-form__cost-title">Cost</legend>
+                <div class="toys-form__cost-filter">
                     <img src="../../static/images/toys/cost/Rectangle2.svg" alt="cost">
-                    <div class="cost-item-strip">
+                    <div class="toys-form__strip">
                         <img src="../../static/images/toys/cost/Rectangle1.svg" alt="cost">
                     </div>
-                    <div class="circle-wrapper">
-                        <div class="cost-item-main-circle">
+                    <div class="toys-form__circle">
+                        <div class="toys-form__circle_big">
                             <img src="../../static/images/toys/cost/Ellipse1.svg" alt="cost" width="24" height="24">
-                            <div class="cost-item-circle">
+                            <div class="toys-form__circle_small">
                                 <img src="../../static/images/toys/cost/Ellipse3.svg" alt="cost" width="8" height="8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cost-value-wrapper">
-                    <p class="form-cost-value-min txt">0</p>
-                    <p class="form-cost-value-max txt">500</p>
+                <div class="toys-form__cost-value">
+                    <p class="toys-form__cost-value_min txt">0</p>
+                    <p class="toys-form__cost-value_max txt">500</p>
                 </div>
             </fieldset>
-            <fieldset class="form-color" form="toys-form" name="filter-color">
-                <legend class="form-color-title">Color</legend>
-                <ul class="form-color-list">
-                    <li class="form-color-item">
-                        <input id="form-color-black-input" type="checkbox" class="color-radio-input  visually-hidden"
+            <fieldset class="toys-form__filter-color" form="toys-form" name="filter-color">
+                <legend class="toys-form__color-title">Color</legend>
+                <ul class="toys-form__color-list">
+                    <li class="toys-form__color-item">
+                        <input id="form-color-black-input" type="checkbox" class="toys-form__color-input  visually-hidden"
                             checked>
-                        <label for="form-color-black-input" class="color-radio-label">Black</label>
+                        <label for="form-color-black-input" class="toys-form__color-label">Black</label>
                     </li>
-                    <li class="form-color-item">
-                        <input id="form-color-blue-input" type="checkbox" class="color-radio-input  visually-hidden">
-                        <label for="form-color-blue-input" class="color-radio-label">Blue</label>
+                    <li class="toys-form__color-item">
+                        <input id="form-color-blue-input" type="checkbox" class="toys-form__color-input  visually-hidden">
+                        <label for="form-color-blue-input" class="toys-form__color-label">Blue</label>
                     </li>
-                    <li class="form-color-item">
-                        <input id="form-color-green-input" type="checkbox" class="color-radio-input  visually-hidden">
-                        <label for="form-color-green-input" class="color-radio-label">Green</label>
+                    <li class="toys-form__color-item">
+                        <input id="form-color-green-input" type="checkbox" class="toys-form__color-input  visually-hidden">
+                        <label for="form-color-green-input" class="toys-form__color-label">Green</label>
                     </li>
-                    <li class="form-color-item">
-                        <input id="form-color-white-input" type="checkbox" class="color-radio-input  visually-hidden">
-                        <label for="form-color-white-input" class="color-radio-label">White</label>
+                    <li class="toys-form__color-item">
+                        <input id="form-color-white-input" type="checkbox" class="toys-form__color-input  visually-hidden">
+                        <label for="form-color-white-input" class="toys-form__color-label">White</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-delivery" form="toys-form" name="filter-delivery">
-                <legend class="form-delivery-title">Delivery</legend>
-                <ul class="form-delivery-list">
-                    <li class="form-delivery-item">
+            <fieldset class="toys-form__delivery" form="toys-form" name="filter-delivery">
+                <legend class="toys-form__delivery-title">Delivery</legend>
+                <ul class="toys-form__delivery-list">
+                    <li class="toys-form__delivery-item">
                         <input id="form-free-delivery-input" type="radio" value="Free shipping" name="delivery"
-                            class="delivery-radio-input  visually-hidden">
-                        <label for="form-free-delivery-input" class="delivery-radio-label">Free shipping</label>
+                            class="toys-form__delivery-input  visually-hidden">
+                        <label for="form-free-delivery-input" class="toys-form__delivery-label">Free shipping</label>
                     </li>
-                    <li class="form-delivery-item">
+                    <li class="toys-form__delivery-item">
                         <input id="form-fast-delivery-input" type="radio" value="Fast shipping" name="delivery"
-                            class="delivery-radio-input  visually-hidden" checked>
-                        <label for="form-fast-delivery-input" class="delivery-radio-label">Fast shipping</label>
+                            class="toys-form__delivery-input  visually-hidden" checked>
+                        <label for="form-fast-delivery-input" class="toys-form__delivery-label">Fast shipping</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="form-amount" form="toys-form" name="filter-amount">
-                <legend class="form-amount-title">Amount</legend>
-                <ul class="form-amount-list">
-                    <li class="form-amount-item">
-                        <input id="min-amount-input" type="radio" class="amount-checkbox-input visually-hidden"
+            <fieldset class="toys-form__amount" form="toys-form" name="filter-amount">
+                <legend class="toys-form__amount-title">Amount</legend>
+                <ul class="toys-form__amount-list">
+                    <li class="toys-form__amount-item">
+                        <input id="min-amount-input" type="radio" class="toys-form__amount-input visually-hidden"
                             value="0-5" name="amount" checked>
-                        <label for="min-amount-input" class="amount-checkbox-label">0-5</label>
+                        <label for="min-amount-input" class="toys-form__amount-label">0-5</label>
                     </li>
-                    <li class="form-amount-item">
-                        <input id="middle-amount-input" type="radio" class="amount-checkbox-input visually-hidden"
+                    <li class="toys-form__amount-item">
+                        <input id="middle-amount-input" type="radio" class="toys-form__amount-input visually-hidden"
                             value="10-20" name="amount">
-                        <label for="middle-amount-input" class="amount-checkbox-label">10-20</label>
+                        <label for="middle-amount-input" class="toys-form__amount-label">10-20</label>
                     </li>
-                    <li class="form-amount-item">
-                        <input id="max-amount-input" type="radio" class="amount-checkbox-input visually-hidden"
+                    <li class="toys-form__amount-item">
+                        <input id="max-amount-input" type="radio" class="toys-form__amount-input visually-hidden"
                             value="20-50" name="amount">
-                        <label for="max-amount-input" class="amount-checkbox-label">20-50</label>
+                        <label for="max-amount-input" class="toys-form__amount-label">20-50</label>
                     </li>
                 </ul>
             </fieldset>
-            <button type="submit" class="toys-form-button button-style">Apply</button>
+            <button type="submit" class="toys-form__button button-style">Apply</button>
         </form>
         <section class="toys-catalog container">
             <h2 class="visually-hidden sub-heading">Toys</h2>
-            <ul class="toys-catalog-list">
-                <li class="toys-catalog-item">
+            <ul class="toys-catalog__list">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys1.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys1.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">SHARKY BEAN BAG CHAIR COVER</h3>
-                            <p class="toys-catalog-item-price">$60.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">SHARKY BEAN BAG CHAIR COVER</h3>
+                            <p class="toys-catalog__offer-price">$60.00 USD</p>
                         </div>
                     </a>
                 </li>
-                <li class="toys-catalog-item">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys2.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys2.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">BRASS DECO FRAMES</h3>
-                            <p class="toys-catalog-item-price">$66.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">BRASS DECO FRAMES</h3>
+                            <p class="toys-catalog__offer-price">$66.00 USD</p>
                         </div>
                     </a>
                 </li>
-                <li class="toys-catalog-item">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys3.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys3.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">CIBO FULL APRON</h3>
-                            <p class="toys-catalog-item-price">$60.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">CIBO FULL APRON</h3>
+                            <p class="toys-catalog__offer-price">$60.00 USD</p>
                         </div>
                     </a>
                 </li>
-                <li class="toys-catalog-item">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys4.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys4.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">GATCHA GATCHA GUMBALL MACHINE</h3>
-                            <p class="toys-catalog-item-price">$56.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">GATCHA GATCHA GUMBALL MACHINE</h3>
+                            <p class="toys-catalog__offer-price">$56.00 USD</p>
                         </div>
                     </a>
                 </li>
-                <li class="toys-catalog-item">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys5.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys5.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">CHRISTMAS ADVENT SCENTED CANDLE</h3>
-                            <p class="toys-catalog-item-price">$29.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">CHRISTMAS ADVENT SCENTED CANDLE</h3>
+                            <p class="toys-catalog__offer-price">$29.00 USD</p>
                         </div>
                     </a>
                 </li>
-                <li class="toys-catalog-item">
+                <li class="toys-catalog__item">
                     <a href="#">
-                        <img src="../../static/images/toys/toys6.png" alt="image" class="toys-catalog-img" height="385" width="380">
-                        <div class="learn-more">
-                            <span class="catalog-img-link">Learn more</span>
+                        <img src="../../static/images/toys/toys6.png" alt="image" class="toys-catalog__img" height="385" width="380">
+                        <div class="toys-catalog__more">
+                            <span class="toys-catalog__more-link">Learn more</span>
                         </div>
-                        <div class="toys-catalog-item-wrapper">
-                            <h3 class="toys-catalog-item-title">TANGLE SPINNING TEA LIGHT</h3>
-                            <p class="toys-catalog-item-price">$56.00 USD</p>
+                        <div class="toys-catalog__offer">
+                            <h3 class="toys-catalog__offer-title">TANGLE SPINNING TEA LIGHT</h3>
+                            <p class="toys-catalog__offer-price">$56.00 USD</p>
                         </div>
                     </a>
                 </li>
             </ul>
         </section>
-        <div class="wrapper-toys-catalog-control container">
             @@include('control-button/index.html')
-        </div>
     </main>
     @@include('footer/index.html')
 </body>

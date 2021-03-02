@@ -78,9 +78,9 @@
     &:hover {
       background-color: rgba(30, 6, 6, 0.6);
     }
-  }
-  &__btn-first {
-    background-color: rgba(30, 6, 6, 0.6);
+    &_active {
+      background-color: rgba(30, 6, 6, 0.6);
+    }
   }
 }
 .slider-offer {
@@ -224,25 +224,30 @@
     border: 0;
     padding-left: 60px;
     width: 325px;
-    height: 55px;  
-  }
-  &__menu-button:focus {
-    font-weight: bold;
-    color: #1E0606;
-    border: 0;
-    outline: none;
-    width: 325px;
     height: 55px;
-    background-color: rgba(112, 187, 220, 0.2);
-    border: 0;
-  }
-  &__text-1 {
-    padding-right: 100px;
-    margin-bottom: 15px;
-  }
+    &_active {
+      background-color: rgba(112, 187, 220, 0.2);
+      font-weight: bold;
+      color: #1E0606;
+    }  
+    &:focus {
+      font-weight: bold;
+      color: #1E0606;
+      border: 0;
+      outline: none;
+      width: 325px;
+      height: 55px;
+      background-color: rgba(112, 187, 220, 0.2);
+      border: 0;
+    }
+ }
   &__text {
     padding-right: 100px;
     margin-bottom: 25px;
+    &_first {
+      padding-right: 100px;
+      margin-bottom: 15px;
+    }
   }
   &__button {
     display: flex;
@@ -360,9 +365,6 @@
     &:active {
       opacity: 0.3;
     }
-  }
-  & .form__button:disabled {
-    background-color: #EEE4DB;
   }
   &.open {
     display: block;
