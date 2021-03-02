@@ -1,7 +1,7 @@
 var popup = document.querySelector ('.popup')
-var overLay = document.querySelector ('.popup-overlay')
-var popupOpenBtn = document.querySelector ('.hero-button')
-var popupCloseBtn = popup.querySelector ('.close-button')
+var overLay = document.querySelector ('.popup__overlay')
+var popupOpenBtn = document.querySelector ('.slider-offer__button')
+var popupCloseBtn = popup.querySelector ('.popup__close-button')
 var input = popup.querySelector ('input')
 
 

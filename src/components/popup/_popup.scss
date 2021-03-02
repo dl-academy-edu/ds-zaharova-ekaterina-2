@@ -1,161 +1,184 @@
-.main-wrapper {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-  }
-  input, textarea {
-    border: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .main-wrapper input:hover {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-  }
-  .main-wrapper input:active {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .main-wrapper input:focus {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .main-wrapper textarea:hover {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-  }
-  .main-wrapper textarea:active {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .main-wrapper textarea:focus {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .contact-form label {
-    margin-bottom: 3px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-  
-  }
-  .contact-form input {
-    padding-left: 20px;
-  }
-  .contact-form textarea {
-    padding-left: 10px;
-  }
-  /* Form Input Name */
-  .form-wrapper {
-    display: flex;
-    flex-direction: column;
+input,
+textarea {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
+.form {
+  display       : flex;
+  flex-direction: row;
+  font-family   : 'Open Sans', 'Arial', sans-serif;
+  font-style    : normal;
+  font-weight   : normal;
+
+  &__wrapper {
+    display         : flex;
+    flex-direction  : column;
     background-color: #E5EAF8;
-    width: 680px;
-    padding-top: 43px;
-    padding-bottom: 42px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width           : 680px;
+    padding-top     : 43px;
+    padding-bottom  : 42px;
+    padding-right   : 40px;
+    padding-left    : 40px;
   }
-  .form-name {
-    display: flex;
-    flex-direction: column;
+
+  & input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.3);
   }
-  .form-name label {
+
+  & input:active {
+    outline: none;
+    border : 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  & input:focus {
+    outline: none;
+    border : 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  & textarea:hover {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  & textarea:active {
+    outline: none;
+    border : 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  & textarea:focus {
+    outline: none;
+    border : 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  & label {
     margin-bottom: 3px;
+    font-family  : 'Open Sans', 'Arial', sans-serif;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 14px;
+    line-height  : 19px;
   }
-  .form-name {
+
+  &__container {
+    & input {
+      padding-left: 20px;
+    }
+
+    & textarea {
+      padding-left: 10px;
+    }
+  }
+
+  &__name {
+    display       : flex;
+    flex-direction: column;
     padding-bottom: 20px;
+
+    & label {
+      margin-bottom: 3px;
+    }
+
+    & input {
+      height: 50px;
+      width : 600px;
+    }
+
+    & input::placeholder {
+      padding-top   : 14px;
+      padding-bottom: 11px;
+      padding-right : 485px;
+      font-size     : 18px;
+      line-height   : 25px;
+      color         : black;
+    }
   }
-  .form-name input {
-    height: 50px;
-    width: 600px;
-  }
-  .form-name input::placeholder {
-    padding-top: 14px;
-    padding-bottom: 11px;
-    padding-right: 485px;
-    font-size: 18px;
-    line-height: 25px;
-    color: black;
-  }
-  /* Form- Phone-Email input */
-  
-  .form-phone-email {
-    display: flex;
+
+  &__phone-email {
+    display       : flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom : 20px;
+
+    & div {
+      display       : flex;
+      flex-direction: column;
+    }
+
+    & input {
+      width : 290px;
+      height: 50px;
+    }
+
+    & input {
+      margin-right: 20px;
+    }
   }
-  .form-phone-email div {
-    display: flex;
+
+  &__textarea {
+    display       : flex;
     flex-direction: column;
+    margin-bottom : 22px;
+
+    & textarea {
+      width : 600px;
+      height: 150px;
+    }
   }
-  .form-phone-email input {
-    width: 290px;
-    height: 50px;
-  }
-  .form-phone-email input{
-    margin-right: 20px;
-  }
-  textarea {
-    resize: none;
-  }
-  /* Form - Textarea */
-  .form-textarea {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 22px;
-  }
-  .form-textarea textarea {
-    width: 600px;
-    height: 150px;
-  }
-  /* Form Checkbox */
-  .agree {
-    display: flex;
+
+  &__agree {
+    display       : flex;
     flex-direction: row;
-    margin-bottom: 17px;
-  } 
-  .agree input {
-    margin-right: 16px;
+    margin-bottom : 17px;
+
+    & input {
+      margin-right: 16px;
+    }
   }
-  .contact-agree-label {
-    position: relative;
+
+  &__agree-label {
+    position    : relative;
     padding-left: 34px;
+
+    &::before {
+      content      : "";
+      position     : absolute;
+      top          : -2px;
+      left         : 0px;
+      width        : 19px;
+      height       : 19px;
+      border       : 2px solid #C29974;
+      border-radius: 3px;
+    }
+
+    &::after {
+      content          : '';
+      position         : absolute;
+      top              : -2px;
+      left             : 3px;
+      width            : 15px;
+      height           : 15px;
+      background-image : url(../../static/images/checkbox/vector1.svg);
+      background-repeat: no-repeat;
+      opacity          : 0;
+    }
   }
-  .contact-agree-label::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0px;
-    width: 19px;
-    height: 19px;
-    border: 2px solid #C29974;
-    border-radius: 3px;
-  }
-  .contact-agree-label::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 3px;
-    width: 15px;
-    height: 15px;
-    background-image: url(../../static/images/checkbox/vector1.svg);
-    background-repeat: no-repeat;
-    opacity: 0;
-  }
-  .contact-agree-input:checked + .contact-agree-label::after {
+
+  &__agree-input:checked+&__agree-label::after {
     opacity: 1;
-}
-  .contact-agree-input:checked + .contact-agree-label {
-    text-decoration: underline;
-}
-        /* Form Button */
-  .form-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 106px;
-    min-height: 40px;
   }
-  
+
+  &__agree-input:checked+&__agree-label {
+    text-decoration: underline;
+  }
+
+  &__button {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    min-width      : 106px;
+    min-height     : 40px;
+  }
+}

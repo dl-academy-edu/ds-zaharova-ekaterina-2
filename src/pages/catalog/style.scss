@@ -8,9 +8,6 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
-.category-title {
-     margin-bottom: 15px;
-}
 .catalog-breadcrumbs-list {
     display: flex;
     flex-direction: row;
@@ -51,6 +48,12 @@
     display: flex;
     justify-content: center;
     width: 129px;
+}
+.catalog-item-title:hover {
+    text-decoration-line: underline;
+}
+.catalog-item-title:active {
+    text-decoration-line: underline;
 }
                    /* Section description */
 .description-wrapper {

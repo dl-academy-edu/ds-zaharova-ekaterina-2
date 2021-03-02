@@ -20,22 +20,22 @@
         'link' : '../../index.html',
         'img' : '/static/images/header/header-logo.svg'
     })
-    <main class="toys-main">
-        <div class="toys-breadcrumbs-wrapper container">
-            <h1 class="toys-title heading">
+    <main class="toys-main"> 
+        <div class="breadcrumbs container">
+            <h1 class="breadcrumbs__title heading">
                 Toy for kids
             </h1>
-            <ul class="toys-breadcrumbs-list">
+            <ul class="breadcrumbs__list">
                 @@include('breadcrumbs/index.html', {
-                    'class' : 'breadcrumb-item',
+                    'class' : 'breadcrumbs__item',
                     'name-page' : 'Catalog'
                 })
-                <li class="toys-breadcrumb-item">
+                <li class="breadcrumbs__item">
                     <svg width="8" height="12" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 2L15 15L2 28" stroke="black" stroke-width="4"/>
                         </svg>
                 </li>
-                <li class="toys-breadcrumb-item">Toys
+                <li class="breadcrumbs__item">Toys
                 </li>
             </ul>
         </div>

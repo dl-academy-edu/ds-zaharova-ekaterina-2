@@ -6,19 +6,20 @@
   width: 1180px;
   box-sizing: content-box;
   padding-top: 50px;
-  &__menu-wrapper{
+}
+.logo{
     display: flex;
     flex-direction: row;
-  }
-  &__logo {
+  &__link {
     width: 100px;
     height: 52px;
-  }
-  &__nav {
+}
+}
+.nav {
     display: flex;
     margin-left: 60px;
     padding-top: 16px;
-  &_list {
+  &__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,10 +27,10 @@
     flex-wrap: wrap;
     row-gap: 9px;
   }
-  &_item + &_item {
+  &__item + &__item {
       margin-left: 20px;
   }
-  &_item-link {
+  &__link {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -39,13 +40,14 @@
     text-transform: uppercase;
   }
 }
-&__search-wrapper{    
+.search {
+  &__wrapper{    
   display: flex;
   flex-direction: row;
   justify-content: center;
   min-width: 136px;
 }
-&__search-btn {
+&__btn {
   display: flex;
   align-items: center;
   margin-right: 26px;
@@ -57,7 +59,7 @@
   background-color: transparent;
   border: none;
 }
-&__contact-button {
+&__link {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -69,11 +71,11 @@
 }
 }
                  /* Condition */
-button:hover,
-a:hover {
+.header button:hover,
+.header a:hover {
   opacity: 0.5;
 }
-button:active,
-a:active {
+.header button:active,
+.header a:active {
   opacity: 0.2;
 }

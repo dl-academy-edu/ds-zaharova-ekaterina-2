@@ -21,17 +21,17 @@
         'img' : '/static/images/header/header-logo.svg'
     })
     <main class="main-contact">
-        <div class="contact container">
-            <h1 class="contact-title heading">Contact us</h1>
-            <ul class="contact-breadcrumbs-list">
+        <div class="breadcrumbs container">
+            <h1 class="breadcrumbs__title heading">Contact us</h1>
+            <ul class="breadcrumbs__list">
                 @@include('breadcrumbs/index.html', {
-                    'class' : 'breadcrumb-item',
+                    'class' : 'breadcrumbs__item',
                     'name-page' : 'Contact Us'
                 })
-            </ul>
+            </ul> 
         </div>
-        <div class="main-wrapper container">
-            <div class="form-wrapper">
+        <div class="form container">
+            <div class="form__wrapper">
                 @@include('popup/index.html')
             </div>
             <div class="form-information">

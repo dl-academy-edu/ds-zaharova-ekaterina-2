@@ -1,32 +1,32 @@
-<form action="https://echo.htmlacademy.ru" method="POST" class="contact-form">
+<form action="https://echo.htmlacademy.ru" method="POST" class="form__container">
     <h2 class="visually-hidden heading">Contact Us</h2>
-    <div class="form-name">
+    <div class="form__name">
         <label for="name-input">Name</label>
         <input id="name-input" type="text" placeholder="Ivan Ivanov" required>
     </div>
-    <div class="form-phone-email">
-        <div class="form-phone">
+    <div class="form__phone-email">
+        <div class="form__phone">
             <label for="phone-input">Phone</label>
             <input id="phone-input" type="text" required>
         </div>
-        <div class="form-email">
+        <div class="form__email">
             <label for="email-input">Email</label>
             <input id="email-input" type="email" required>
         </div>
     </div>
-    <div class="form-textarea">
+    <div class="form__textarea">
         <label for="textatea-input">Message</label>
         <textarea id="textatea-input" name="Message" cols="30" rows="10"></textarea>
     </div>
-    <div class="agree">
-        <input id="agree-input" type="checkbox" class="contact-agree-input visually-hidden" value="agree"
+    <div class="form__agree">
+        <input id="agree-input" type="checkbox" class="form__agree-input visually-hidden" value="agree"
             required checked>
-        <label for="agree-input" class="contact-agree-label">By clicking on the button, you consent to the
+        <label for="agree-input" class="form__agree-label">By clicking on the button, you consent to the
             processing of your personal data</label>
     </div>
     @@include('button/index.html', {
         'text': 'submit',
-        'class': 'form-button button-style',
+        'class': 'form__button button-style',
         'type' : 'submit'
         })
-</form>
+</form> 
