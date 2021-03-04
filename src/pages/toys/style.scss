@@ -32,11 +32,22 @@
         line-height: 22px;
         color: #1E0606;
     }
-    &__cost {
+    &__filter {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-right: 108px;
+        &_margin-cost {
+            margin-right: 108px;
+        }
+        &_margin-color {
+            margin-right: 126px;
+        }
+        &_margin-delivery {
+            margin-right: 69px;
+        }
+        &_margin-amount {
+            margin-right: 60px;
+        }
     }
     &__cost-filter {
         position: relative;
@@ -74,12 +85,6 @@
         &_max {
             margin-right: -11px;
         }
-    }
-    &__filter-color {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-right: 126px;
     }
     &__color-item {
         display: flex;
@@ -125,12 +130,6 @@
     &__color-input:checked + &__color-label{
         text-decoration: underline;
     }
-    &__delivery {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-right: 69px;
-    }
     &__delivery-item {
         display: flex;
         flex-direction: row;
@@ -171,12 +170,6 @@
     }
     &__delivery-input:checked + &__delivery-label {
         text-decoration: underline;
-    }
-    &__amount {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-right: 60px;
     }
     &__amount-list {
         display: flex;
