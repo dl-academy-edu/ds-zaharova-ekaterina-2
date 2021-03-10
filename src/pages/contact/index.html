@@ -21,26 +21,26 @@
         'img' : '/static/images/header/header-logo.svg'
     })
     <main class="main-contact">
-        <div class="contact container">
-            <h1 class="contact-title heading">Contact us</h1>
-            <ul class="contact-breadcrumbs-list">
+        <div class="breadcrumbs container">
+            <h1 class="breadcrumbs__title heading">Contact us</h1>
+            <ul class="breadcrumbs__list">
                 @@include('breadcrumbs/index.html', {
-                    'class' : 'breadcrumb-item',
+                    'class' : 'breadcrumbs__item',
                     'name-page' : 'Contact Us'
                 })
-            </ul>
+            </ul> 
         </div>
-        <div class="main-wrapper container">
-            <div class="form-wrapper">
+        <div class="form contact-form container">
+            <div class="form__wrapper">
                 @@include('popup/index.html')
             </div>
-            <div class="form-information">
-                <p class="contact-txt txt">Our support team are on-hand to assist with any issues you are experiencing.
+            <div class="contact-form__information">
+                <p class="contact-form__txt txt">Our support team are on-hand to assist with any issues you are experiencing.
                 </p>
-                <p class="contact-txt txt">Please use the form to contact us with your needs. Send us a message and
+                <p class="contact-form__txt txt">Please use the form to contact us with your needs. Send us a message and
                     we'll
                     respond as soon as possible.</p>
-                <p class="contact-txt txt">An expert is waiting to help you!</p>
+                <p class="contact-form__txt txt">An expert is waiting to help you!</p>
             </div>
         </div>
     </main>

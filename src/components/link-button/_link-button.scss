@@ -9,16 +9,13 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-  }
-  
-  .button-style:hover {
-    background-color: #C29974;
-  }
-  
-  .button-style:active {
-    background-color: #CFAF91;
-  }
-  
-  .button-style:disabled {
-    background-color: #C1C1C1;
+  &:hover {
+      background-color: #C29974;
+    }
+  &:active {
+      background-color: #CFAF91;
+    }
+  &:disabled {
+      background-color: #C1C1C1;
+    }
   }

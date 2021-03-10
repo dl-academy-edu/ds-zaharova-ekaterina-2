@@ -22,207 +22,199 @@
     })
     <main class="main">
         <h1 class="visually-hidden heading">Dlk</h1>
-        <section class="hero-main container">
-            <div class="hero-wrapper">
-                <div class="wrapper-container">
-                    <div class="items-wrapper">
-                        <span class="sidebar-number">01</span>
-                        <ul class="sidebar-items">
-                            <li class="sidebar-item">
-                                <button type="button" class="sidebar-button sidebar-one"
+        <section class="slider container">
+            <div class="slider__wrapper">
+                <div class="slider__wrapper-container">
+                    <div class="slider-control">
+                        <span class="slider-control__number">01</span>
+                        <ul class="slider-control__list">
+                            <li class="slider-control__item">
+                                <button type="button" class="slider-control__btn slider-control__btn_active"
                                     aria-label=" change slide"></button>
                             </li>
-                            <li class="sidebar-item">
-                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            <li class="slider-control__item">
+                                <button type="button" class="slider-control__btn" aria-label="change slide"></button>
                             </li>
-                            <li class="sidebar-item">
-                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            <li class="slider-control__item">
+                                <button type="button" class="slider-control__btn" aria-label="change slide"></button>
                             </li>
-                            <li class="sidebar-item">
-                                <button type="button" class="sidebar-button" aria-label="change slide"></button>
+                            <li class="slider-control__item">
+                                <button type="button" class="slider-control__btn" aria-label="change slide"></button>
                             </li>
                         </ul>
                     </div>
-                    <div class="title-text-wrapper">
-                        <h2 class="hero-title">The ooh noo collection
+                    <div class="slider-offer">
+                        <h2 class="slider-offer__title">The ooh noo collection
                         </h2>
-                        <p class="hero-text">Designed in Slovenia</p>
+                        <p class="slider-offer__text">Designed in Slovenia</p>
                         @@include('button/index.html', {
                         'text': 'Explore now',
-                        'class': 'hero-button button-style',
+                        'class': 'slider-offer__button button-style',
                         'type' : 'button'
                         })
                     </div>
-                    <img src="/static/images/hero/hero-image.png" alt="Monster" class="hero-img" height="635"
+                    <img src="/static/images/hero/hero-image.png" alt="Monster" class="slider__img" height="635"
                         width="460">
                 </div>
-                <p class="hero-footer">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+                <p class="slider__aside">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>
         </section>
         <section class="category container">
             @@include('sub-heading/index.html', {
-            'class' : 'category-title',
+            'class' : 'category__title',
             'text' : 'Category products'
             })
-            <ul class="category-items catalog-txt-style">
+            <ul class="category__list catalog-txt-style">
                 @@include('catalog-card/index.html', {
-                'classLi' : 'category-item',
+                'classLi' : 'category__item',
                 'href' : '#',
-                'class' : 'category-item-link',
-                'classTitle' : 'category-item-title',
+                'class' : 'category__link',
+                'classTitle' : 'category__card-title',
                 'text' : 'Apparel kids',
                 'img' : 'static/images/category/apparel.png',
-                'classImg' : 'category-item-img apparel-bckgrnd'
+                'classImg' : 'category__img apparel-bckgrnd'
                 })
                 @@include('catalog-card/index.html', {
-                'classLi' : 'category-item',
+                'classLi' : 'category__item',
                 'href' : '#',
-                'class' : 'category-item-link',
-                'classTitle' : 'category-item-title',
+                'class' : 'category__link',
+                'classTitle' : 'category__card-title',
                 'text' : 'Holiday shop',
                 'img' : 'static/images/category/holiday.png',
-                'classImg' : 'category-item-img holiday-bckgrnd'
+                'classImg' : 'category__img holiday-bckgrnd'
                 })
                 @@include('catalog-card/index.html', {
-                'classLi' : 'category-item',
+                'classLi' : 'category__item',
                 'href' : 'pages/toys/index.html',
-                'class' : 'category-item-link',
-                'classTitle' : 'category-item-title',
+                'class' : 'category__link',
+                'classTitle' : 'category__card-title',
                 'text' : 'Toys',
                 'img' : 'static/images/category/toys.png',
-                'classImg' : 'category-item-img toys-bckgrnd'
+                'classImg' : 'category__img toys-bckgrnd'
                 })
                 @@include('catalog-card/index.html', {
-                'classLi' : 'category-item',
+                'classLi' : 'category__item',
                 'href' : '#',
-                'class' : 'category-item-link',
-                'classTitle' : 'category-item-title',
+                'class' : 'category__link',
+                'classTitle' : 'category__card-title',
                 'text' : 'Accessories',
                 'img' : 'static/images/category/accessories.png',
-                'classImg' : 'category-item-img accessories-bckgrnd'
+                'classImg' : 'category__img accessories-bckgrnd'
                 })
             </ul>
-            <div class="category-control">
-                <div class="category-button-wrapper">
-                    @@include('arrow-button/index.html', {
-                        'class' : 'category-cntrl-btn-left',
-                        'aria-label' : 'scroll category left',
-                        'width' : '18',
-                        'height' : '30',
-                        'fill' : 'none',
-                        'path' : 'M16 2L3 15L16 28',
-                        'stroke' : '#1E0606'
-                    })
-                    @@include('arrow-button/index.html', {
-                        'class' : 'category-cntrl-btn-right',
-                        'aria-label' : 'scroll category right',
-                        'width' : '18',
-                        'height' : '30',
-                        'fill' : 'none',
-                        'path' : 'M2 2L15 15L2 28',
-                        'stroke' : '#1E0606'
-                    })
+            <div class="category__control-wrapper">
+                <div class="category__button-wrapper">
+                    <button type="button" class="category__button" aria-label="scroll category left">
+                        <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
+                        </svg>
+                    </button>
+                    <button type="button" class="category__button" aria-label="scroll category right">
+                        <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
+                        </svg>
+                    </button>
                 </div>
-                <p class="category-cntrl-txt txt">Modern finds for the modern home. Curated goods by unique
-                    designers<br>
+                <p class="category__txt txt">Modern finds for the modern home. Curated goods by unique
+                    designers
                     around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
         <section class="delivery container">
-            <div class="delivery-img-wrapper">
+            <div class="delivery__img">
             </div>
-            <div class="delivery-wrapper">
+            <div class="delivery__wrapper">
                 @@include('sub-heading/index.html', {
-                'class' : 'delivery-title',
+                'class' : 'delivery__title',
                 'text' : 'Delivery'
                 })
-                <ul class="delivery-items">
-                    <li class="delivery-item">
-                        <button type="button" class="delivery-item-btn" autofocus>Delivery</button>
+                <ul class="delivery__menu-list">
+                    <li class="delivery__menu-item">
+                        <button type="button" class="delivery__menu-button delivery__menu-button_active">Delivery</button>
                     </li>
-                    <li class="delivery-item">
-                        <button type="button" class="delivery-item-btn">Guarantee</button>
+                    <li class="delivery__menu-item">
+                        <button type="button" class="delivery__menu-button">Guarantee</button>
 
                     </li>
-                    <li class="delivery-item">
-                        <button type="button" class="delivery-item-btn">Credit</button>
+                    <li class="delivery__menu-item">
+                        <button type="button" class="delivery__menu-button">Credit</button>
                     </li>
                 </ul>
-                <p class="delivery-txt-first txt">Some days i feel like i've been working on dlk my entire life and
+                <p class="delivery__text_first txt">Some days i feel like i've been working on dlk my entire life and
                     there are
                     other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <p class="delivery-txt txt">What started as an outlet to deal with the traumatic loss of my husband, dlk
+                <p class="delivery__text txt">What started as an outlet to deal with the traumatic loss of my husband, dlk
                     has now become a truly happy place for me and i have you and all of the beautiful designers that we
                     work
                     with to thank!</p>
                 @@include('link-button/index.html', {
                 'text': 'Learn more',
-                'class': 'delivery-button button-style',
+                'class': 'delivery__button button-style',
                 })
             </div>
         </section>
         <section class="partners container">
             @@include('sub-heading/index.html', {
-            'class' : 'delivery-title visually-hidden',
+            'class' : 'partners__title visually-hidden',
             'text' : 'Partners'
             })
-            <ul class="partners-list">
-                <li class="partner-item">
-                    <a href="#" class="partner-item-link" aria-label="Go to Mail.ru">
-                        <img src="static/images/partners/mail.png" alt="Partner" class="partner-item-img">
+            <ul class="partners__list">
+                <li class="partners__item">
+                    <a href="#" class="partners__link" aria-label="Go to Mail.ru">
+                        <img src="static/images/partners/mail.png" alt="Partner" class="partners__img">
                     </a>
                 </li>
-                <li class="partner-item">
-                    <a href="#" class="partner-item-link" aria-label="Go to Apple">
-                        <img src="static/images/partners/apple.png" alt="Partner" class="partner-item-img">
+                <li class="partners__item">
+                    <a href="#" class="partners__link" aria-label="Go to Apple">
+                        <img src="static/images/partners/apple.png" alt="Partner" class="partners__img">
                     </a>
                 </li>
-                <li class="partner-item">
-                    <a href="#" class="partner-item-link" aria-label="Go to Eltex">
-                        <img src="static/images/partners/eltex.png" alt="Partner" class="partner-item-img">
+                <li class="partners__item">
+                    <a href="#" class="partners__link" aria-label="Go to Eltex">
+                        <img src="static/images/partners/eltex.png" alt="Partner" class="partners__img">
                     </a>
                 </li>
-                <li class="partner-item">
-                    <a href="#" class="partner-item-link" aria-label="Go to Owox">
-                        <img src="static/images/partners/owox.png" alt="Partner" class="partner-item-img">
+                <li class="partners__item">
+                    <a href="#" class="partners__link" aria-label="Go to Owox">
+                        <img src="static/images/partners/owox.png" alt="Partner" class="partners__img">
                     </a>
                 </li>
             </ul>
         </section>
         <section class="aside container">
-            <div class="buy">
+            <div class="aside__buy">
                 @@include('sub-heading/index.html', {
-                'class' : 'buy-title',
+                'class' : 'aside__buy-title',
                 'text' : 'Design Life Kids'
                 })
-                <h3 class="buy-subtitle">About Us</h3>
-                <p class="buy-txt txt">Some days i feel like i've been working on dlk my entire life and there are
+                <h3 class="aside__buy-subtitle">About Us</h3>
+                <p class="aside__buy-txt txt">Some days i feel like i've been working on dlk my entire life and there are
                     other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 @@include('link-button/index.html', {
                 'text': 'BUY NOW',
-                'class': 'buy-button button-style',
+                'class': 'aside__buy-button button-style',
                 })
             </div>
-            <div class="contacts">
+            <div class="aside__contacts">
                 @@include('sub-heading/index.html', {
-                'class' : 'contacts-title',
+                'class' : 'aside__contacts-title',
                 'text' : 'Contacts'
                 })
-                <p class="contacts-txt txt">Some days i feel like i've been working on dlk my entire life and there
+                <p class="aside__contacts-txt txt">Some days i feel like i've been working on dlk my entire life and there
                     are
                     other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <img src="static/images/aside/contacts-img.png" alt="Map" class="contacts-img" height="196" width="483">
+                <img src="static/images/aside/contacts-img.png" alt="Map" class="aside__contacts-img" height="196" width="483">
             </div>
         </section>
     </main>
     @@include('footer/index.html')
-        <div class="main-wrapper popup">
-            <div class="form-wrapper">
+        <div class="form popup">
+            <div class="form__wrapper">
                 @@include('popup/index.html')
-                <button class="close-button" aria-label="Close"></button>
+                <button class="popup__close-button" aria-label="Close"></button>
             </div>
         </div>        
-    <div class="popup-overlay"></div>
+    <div class="popup__overlay"></div>
     <script src="scripts.js"></script>
 </body>
 

@@ -5,6 +5,9 @@ npm-debug.log*
 build
 dest
 fonts
+test
+animation
+perfomance
 
 .idea
 
