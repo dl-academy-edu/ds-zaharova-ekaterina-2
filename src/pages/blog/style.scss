@@ -50,9 +50,11 @@
         margin-bottom: 15px;
         &:hover {
             text-decoration-line: underline;
+            transition: .4s;
         }
         &:active{
             text-decoration-line: underline;
+            transition: .4s;
         }
     }
     &__txt {

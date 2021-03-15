@@ -11,9 +11,11 @@
     cursor: pointer;
   &:hover {
       background-color: #C29974;
+      transition: .4s;
     }
   &:active {
       background-color: #CFAF91;
+      transition: .4s;
     }
   &:disabled {
       background-color: #C1C1C1;

@@ -344,7 +344,7 @@
         position: absolute;
         top: 265px;
         left: 1400px;
-        animation: taxiMotionOne 10s 5s linear ;
+        animation: taxiMotionOne 10s 5s linear forwards;
         @keyframes taxiMotionOne {
             50% {
                 left: 557px;
@@ -377,9 +377,15 @@
         left: 305px;
         transform: rotate(155deg);
         transform-origin: left bottom;
-        animation: handMotion 3s linear 8s reverse;
+        animation: handMotion 3s linear 8s;
         @keyframes handMotion {
-            50% {
+            40% {
+                top: 188px;
+                left: 290px;
+                transform: rotate(22deg);
+                transform-origin: left bottom;
+            }
+            60% {
                 top: 188px;
                 left: 290px;
                 transform: rotate(22deg);
@@ -412,13 +418,16 @@
         top: 436px;
         left: 211px;
         transform: translate(1px,-3px) rotate(354deg);
-        animation: hand-womanMotion 3s linear reverse;
+        animation: hand-womanMotion 4s linear;
         @keyframes hand-womanMotion {
             20% {
                 transform: translate(1px,-3px) rotate(354deg);
             }
-            40% {
+            30% {
                 transform: translate(2px,-13px) rotate(331deg);
+            }
+            40% {
+                transform: translate(-1px,-26px) rotate(302deg);
             }
             60% {
                 transform: translate(-1px,-26px) rotate(302deg);

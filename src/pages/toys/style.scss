@@ -13,6 +13,7 @@
     margin-bottom: 60px;
     &:focus {
         outline: none;
+        transition: .4s;
     }
     & legend {
         font-family: 'Open Sans', 'Arial', sans-serif;
@@ -203,14 +204,17 @@
     &__amount-input:checked + &__amount-label::before {
         opacity: 1;
         z-index: -1;
+        transition: .4s;
     }
     &__amount-input:hover + &__amount-label::before {
         background-color: #EDDEEB;
         opacity: 1;
         z-index: -1;
+        transition: .4s;
     }
     &__amount-input:hover + &__amount-label {
-        color: #877379
+        color: #877379;
+        transition: .4s;
     }
     &__button {
         display: flex;
@@ -263,9 +267,11 @@
         transition: 0.3s;
         &:hover {
             opacity: 0.9;
+            transition: .4s;
         }
         &:active {
             opacity: 0.6;
+            transition: .4s;
         }
     }
     &__more-link {

@@ -19,10 +19,12 @@
             color: #1E0606;
             &:hover {
                 opacity: 0.5;
+                transition: .4s;
             }
         }
         &_active {
             color: #C29974;
+            transition: .4s;
         }
         &:first-child {
             margin-right: 67px;
@@ -44,9 +46,11 @@
         opacity: 0.12;
         &:hover {
             opacity: 1;
+            transition: .4s;
         }
         &:active {
             opacity: 0.5;
+            transition: .4s;
         }
     }
     &__right {
@@ -55,9 +59,11 @@
         opacity: 0.12;
         &:hover {
             opacity: 1;
+            transition: .4s;
         }
         &:active {
             opacity: 0.5;
+            transition: .4s;
         }
     }
 }
