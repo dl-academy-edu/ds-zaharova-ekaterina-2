@@ -77,9 +77,11 @@
     border: none;
     &:hover {
       background-color: rgba(30, 6, 6, 0.6);
+      transition: .4s;
     }
     &_active {
       background-color: rgba(30, 6, 6, 0.6);
+      transition: .4s;
     }
   }
 }
@@ -133,9 +135,11 @@
     width: 129px;
   &:hover {
     text-decoration-line: underline;
+    transition: .4s;
 }
   &:active {
   text-decoration-line: underline;
+  transition: .4s;
   }
  }
  &__list {
@@ -229,6 +233,7 @@
       background-color: rgba(112, 187, 220, 0.2);
       font-weight: bold;
       color: #1E0606;
+      transition: .4s;
     }  
     &:focus {
       font-weight: bold;
@@ -239,6 +244,7 @@
       height: 55px;
       background-color: rgba(112, 187, 220, 0.2);
       border: 0;
+      transition: .4s;
     }
  }
   &__text {
@@ -361,9 +367,11 @@
     border: 0;
     &:hover {
       opacity: 0.5;
+      transition: .4s;
     }
     &:active {
       opacity: 0.3;
+      transition: .4s;
     }
   }
   &.open {

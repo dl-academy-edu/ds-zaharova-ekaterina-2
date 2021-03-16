@@ -33,9 +33,11 @@
         width: 129px;
         &:hover {
             text-decoration-line: underline;
+            transition: .4s;
         }
         &:active {
             text-decoration-line: underline;
+            transition: .4s;
         }
     }
 }
